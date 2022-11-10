@@ -10,15 +10,6 @@ val commonSettings = Seq(
   run / fork := true,
   Test / fork := true,
   run / connectInput := true,
-  javacOptions ++= Seq(
-    "-g",
-    "-source", "19",
-    "--enable-preview",
-  ),
-  javaOptions ++= Seq(
-    "--enable-preview",
-    "--enable-native-access=ALL-UNNAMED",
-  ),
 )
 
 lazy val common = (project in file("common"))
